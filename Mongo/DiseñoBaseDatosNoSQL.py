@@ -1,0 +1,192 @@
+#Registro:
+dic1={
+    "enfriamiento":
+        {
+        "sensor":
+            {
+            "temperatura":
+                {
+                 "id":"01:01:01:01:01:01",
+                 "configuracion":0,
+                 "medicion":0
+                 }
+            ,"humedad":
+                {
+                 "id":"02:02:02:02:02:02",
+                 "estado":0
+                 
+                 }
+            }
+        ,"actuador":
+            {
+            "ventilador":
+                {
+                 "id":"03:03:03:03:03:03",
+                 "estado":0,
+                 "modo":"manual"
+                }
+            }
+        }
+    ,"incendios":
+        {
+        "sensor":
+            {
+            "temperatura":
+                {
+                 "id":"04:04:04:04:04:04",
+                 "configuracion":0,
+                 "medicion":0
+                 }
+            ,"flama":
+                {
+                 "id":"05:05:05:05:05:05",
+                 "configuracion":0,
+                 "medicion":0
+                 }
+            ,"gas":
+                {
+                 "id":"06:06:06:06:06:06",
+                 "configuracion":0,
+                 "medicion":0
+                 }
+            }
+        ,"actuador":
+            {
+            "aspersor":
+                 {
+                 "id":"07:07:07:07:07:07",
+                 "estado":0,
+                 "modo":"manual"
+                 }
+            ,"chicharra":
+                {
+                 "id":"08:08:08:08:08:08",
+                 "estado":0,
+                 "modo":"manual"
+                 }
+            }
+        }
+    }
+print(dic1)
+
+dic2={
+"sistema":"enfriamiento",
+"sensores":
+    {
+    "temperatura":
+        {
+         "id":"01:01:01:01:01:01",
+         "configuracion":0,
+         "medicion":0
+         }
+    ,"humedad":
+        {
+         "id":"02:02:02:02:02:02",
+         "estado":0
+         
+         }
+    }
+,"actuadores":
+    {
+    "ventilador":
+        {
+         "id":"03:03:03:03:03:03",
+         "estado":0,
+         "modo":"manual"
+        }
+    }
+}
+
+print(dic2)
+
+dic3={
+"sistema":"incendios",
+"sensor":
+    {
+    "temperatura":
+        {
+         "id":"04:04:04:04:04:04",
+         "configuracion":0,
+         "medicion":0
+         }
+    ,"flama":
+        {
+         "id":"05:05:05:05:05:05",
+         "configuracion":0,
+         "medicion":0
+         }
+    ,"gas":
+        {
+         "id":"06:06:06:06:06:06",
+         "configuracion":0,
+         "medicion":0
+         }
+    }
+,"actuador":
+    {
+    "aspersor":
+         {
+         "id":"07:07:07:07:07:07",
+         "estado":0,
+         "modo":"manual"
+         }
+    ,"chicharra":
+        {
+         "id":"08:08:08:08:08:08",
+         "estado":0,
+         "modo":"manual"
+         }
+    }
+}
+
+print(dic3)
+
+
+"""
+Monitoreo:
+    "enfriamiento":
+        "sensores":
+            "tempertaura":Valor
+            "humedad":Valor
+        "actuador":
+            "ventilador":status
+    "incendios":
+        "sensores":
+            "tempertaura":Valor
+            "flama":Valor
+            "gas":Valor
+        "actuadores":
+            "aspersor":status
+            "chicharra":status
+            
+Configuración:
+    "enfriamiento":
+        "modo":
+        "sensores":
+            "tempertaura":
+                "Min":20
+                "Max":22
+            "humedad":
+                "Min":50
+                "Max":60
+        "actuadores":
+                "ventilador":Modo
+    "incendios":
+        "sensores":
+            "tempertaura":5
+            "flama":45
+            "gas":23
+        "actuadores":
+            "aspersor":Modo
+            "chicharra":Modo
+        
+Bitacoras
+    "MarcaTiempo"
+    "Entidad"
+    "TipoEvento"
+    "Descripción"
+    ..
+
+Analisis de componentes
+Diagrama de estados
+"""

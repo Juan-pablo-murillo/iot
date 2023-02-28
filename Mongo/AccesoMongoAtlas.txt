@@ -1,0 +1,3 @@
+Cluster-Pruebas
+usuario: pmurillo
+password: 748eVGxo3uMIckju
